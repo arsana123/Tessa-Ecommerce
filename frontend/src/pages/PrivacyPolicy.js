@@ -77,7 +77,7 @@ export default function PrivacyPolicy() {
               <li>Request deletion of your data</li>
               <li>Withdraw consent at any time</li>
             </ul>
-            <p>To exercise any of these rights, email us at <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a>.</p>
+            <p>To exercise any of these rights, email us at <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a>.</p>
           </section>
 
           <section className={styles.section}>
@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
             <p>For any privacy-related questions or requests, please contact:</p>
             <div className={styles.contactBox}>
               <p><strong>Tessa</strong></p>
-              <p>Email: <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a></p>
+              <p>Email: <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a></p>
               <p>Website: <a href="https://ecommerce-1-782g.onrender.com" className={styles.link}>https://ecommerce-1-782g.onrender.com</a></p>
             </div>
           </section>

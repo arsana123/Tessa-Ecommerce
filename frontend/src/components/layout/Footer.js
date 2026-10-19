@@ -39,7 +39,7 @@ const FOOTER_LINKS = {
 const SOCIAL_LINKS = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/anugill03/",
+    href: "https://www.linkedin.com/in/archanasiingh03/",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -50,7 +50,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/919306018247",
+    href: "https://wa.me/919508580318",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -144,7 +144,7 @@ export default function Footer() {
                   </span>
                   <span>LPU, Punjab — GH6</span>
                 </a>
-                <a href="mailto:gillanu01234@gmail.com" className={styles.contactItem}>
+                <a href="mailto:siingharchana01234@gmail.com" className={styles.contactItem}>
                   <span className={styles.contactIcon}>
                     {/* mail */}
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -152,16 +152,16 @@ export default function Footer() {
                       <polyline points="22,6 12,13 2,6" />
                     </svg>
                   </span>
-                  <span>gillanu01234@gmail.com</span>
+                  <span>archanasiingh00@gmail.com</span>
                 </a>
-                <a href="tel:+919306018247" className={styles.contactItem}>
+                <a href="tel:+919508580318" className={styles.contactItem}>
                   <span className={styles.contactIcon}>
                     {/* phone */}
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.61 4.5 2 2 0 0 1 3.6 2.33h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                     </svg>
                   </span>
-                  <span>+91 93060 18247</span>
+                  <span>+91 9508580318</span>
                 </a>
               </div>
 

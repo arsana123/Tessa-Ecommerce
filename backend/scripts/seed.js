@@ -135,7 +135,7 @@ const seed = async () => {
   console.log("Collections cleared");
 
   for (const u of USERS) {
-    const user = await User.create(u); // FIXED: no manual hashing
+    const user = await User.create(u); // FIXED: no marchanaal hashing
     console.log(`User: ${user.email} (${user.role})`);
   }
 
@@ -174,7 +174,7 @@ const seed = async () => {
   console.log("SEED COMPLETE");
   console.log("=".repeat(50));
   console.log(`Users: ${USERS.length} | Products: ${createdProducts.length} | Flash sales: ${flashCount}`);
-  console.log(`\nAdmin: ${process.env.ADMIN_EMAIL || "admin@dropt.com"} / ${process.env.ADMIN_PASSWORD || "Admin@123"}`);
+  console.log(`\nAdmin: ${process.env.ADMIN_EMAIL || "admin@TESSA.com"} / ${process.env.ADMIN_PASSWORD || "Admin@123"}`);
   console.log("Test users: arjun.sharma@example.com | priya.mehta@example.com | rohit.verma@example.com");
 
   process.exit(0);

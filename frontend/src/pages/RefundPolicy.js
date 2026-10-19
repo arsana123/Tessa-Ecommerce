@@ -14,7 +14,7 @@ export default function RefundPolicy() {
 
           <section className={styles.section}>
             <h2 className={styles.heading}>1. Cancellations</h2>
-            <p>You may cancel your order within <strong>24 hours of placing it</strong>, provided it has not yet been shipped. To cancel, email us at <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a> with your order ID. Once an order has been dispatched, it cannot be cancelled — you may instead initiate a return after delivery.</p>
+            <p>You may cancel your order within <strong>24 hours of placing it</strong>, provided it has not yet been shipped. To cancel, email us at <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a> with your order ID. Once an order has been dispatched, it cannot be cancelled — you may instead initiate a return after delivery.</p>
             <p style={{ marginTop: 12 }}><strong>Flash sale orders</strong> cannot be cancelled once payment is confirmed, as these are time-limited and processed immediately.</p>
           </section>
 
@@ -26,7 +26,7 @@ export default function RefundPolicy() {
               <li>Tags and labels are intact</li>
               <li>The item is not from the non-returnable categories listed below</li>
             </ul>
-            <p>To initiate a return, email <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a> with your order ID and reason for return. We will provide a return shipping address.</p>
+            <p>To initiate a return, email <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a> with your order ID and reason for return. We will provide a return shipping address.</p>
           </section>
 
           <section className={styles.section}>
@@ -63,7 +63,7 @@ export default function RefundPolicy() {
 
           <section className={styles.section}>
             <h2 className={styles.heading}>6. Late or Missing Refunds</h2>
-            <p>If you haven't received your refund within the stated timeline, please check with your bank first. If the issue persists, contact us at <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a> and we will investigate with Razorpay.</p>
+            <p>If you haven't received your refund within the stated timeline, please check with your bank first. If the issue persists, contact us at <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a> and we will investigate with Razorpay.</p>
           </section>
 
           <section className={styles.section}>
@@ -71,7 +71,7 @@ export default function RefundPolicy() {
             <p>For all cancellation and refund queries:</p>
             <div className={styles.contactBox}>
               <p><strong>Tessa</strong></p>
-              <p>Email: <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a></p>
+              <p>Email: <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a></p>
               <p>Response time: within 24–48 business hours</p>
               <p>Website: <a href="https://ecommerce-1-782g.onrender.com" className={styles.link}>https://ecommerce-1-782g.onrender.com</a></p>
             </div>

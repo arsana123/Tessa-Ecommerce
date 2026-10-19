@@ -1,7 +1,7 @@
 {
-  "name": "dropt-backend",
+  "name": "TESSA-backend",
   "version": "1.0.0",
-  "description": "Dropt High-Concurrency E-Commerce Backend",
+  "description": "TESSA High-Concurrency E-Commerce Backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

@@ -185,7 +185,7 @@ const sendOTPEmail = async (to, otp) => {
   const tpl = buildOTPTemplate(otp, expiryMins);
 
   const info = await transport.sendMail({
-    from:    `"Tessa" <${process.env.EMAIL_FROM || process.env.EMAIL_USER || "noreply@dropt.com"}>`,
+    from:    `"Tessa" <${process.env.EMAIL_FROM || process.env.EMAIL_USER || "noreply@TESSA.com"}>`,
     to,
     subject: tpl.subject,
     text:    tpl.text,

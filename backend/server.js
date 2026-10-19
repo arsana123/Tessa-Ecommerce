@@ -69,7 +69,7 @@ const start = async () => {
   }
 
   app.listen(PORT, () => {
-    process.stdout.write(`dropt API → http://localhost:${PORT}\n`);
+    process.stdout.write(`TESSA API → http://localhost:${PORT}\n`);
     process.stdout.write(`Environment  → ${process.env.NODE_ENV}\n`);
   });
 };

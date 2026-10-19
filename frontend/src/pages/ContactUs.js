@@ -28,8 +28,8 @@ export default function ContactUs() {
               </div>
               <h3 className={styles.contactCardTitle}>Email Support</h3>
               <p className={styles.contactCardSub}>For orders, returns, and general queries</p>
-              <a href="mailto:gillanu2003@gmail.com" className={styles.contactValue}>
-                gillanu2003@gmail.com
+              <a href="mailto:siingharchana2003@gmail.com" className={styles.contactValue}>
+                siingharchana2003@gmail.com
               </a>
             </div>
 

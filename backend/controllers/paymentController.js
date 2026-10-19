@@ -58,7 +58,7 @@ exports.createPaymentOrder = async (req, res, next) => {
     currency: "INR",
     receipt:  `fk_${order._id.toString().slice(-12)}`,   // max 40 chars
     notes: {
-      droptOrderId: order._id.toString(),
+      TESSAOrderId: order._id.toString(),
       userId:           req.user._id.toString(),
       isFlashOrder:     String(order.isFlashOrder),
     },
@@ -133,7 +133,7 @@ exports.verifyPayment = async (req, res, next) => {
 
     if (!updated) {
       // Edge case: stock ran out between order creation and payment
-      // Mark payment received but flag for manual review / auto-refund
+      // Mark payment received but flag for marchanaal review / auto-refund
       order.payment.status          = "paid";
       order.payment.razorpayPaymentId = razorpayPaymentId;
       order.orderStatus             = "cancelled";

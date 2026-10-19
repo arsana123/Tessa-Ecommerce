@@ -31,7 +31,7 @@ export default function TermsAndConditions() {
 
           <section className={styles.section}>
             <h2 className={styles.heading}>3. Account Registration</h2>
-            <p>To place an order, you must create an account using a valid email address. You are responsible for maintaining the confidentiality of your account and for all activities that occur under it. Notify us immediately at <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a> if you suspect unauthorised access.</p>
+            <p>To place an order, you must create an account using a valid email address. You are responsible for maintaining the confidentiality of your account and for all activities that occur under it. Notify us immediately at <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a> if you suspect unauthorised access.</p>
           </section>
 
           <section className={styles.section}>
@@ -89,7 +89,7 @@ export default function TermsAndConditions() {
             <p>For questions about these Terms, contact us at:</p>
             <div className={styles.contactBox}>
               <p><strong>Tessa</strong></p>
-              <p>Email: <a href="mailto:gillanu2003@gmail.com" className={styles.link}>gillanu2003@gmail.com</a></p>
+              <p>Email: <a href="mailto:siingharchana2003@gmail.com" className={styles.link}>siingharchana2003@gmail.com</a></p>
               <p>Website: <a href="https://ecommerce-1-782g.onrender.com" className={styles.link}>https://ecommerce-1-782g.onrender.com</a></p>
             </div>
           </section>
