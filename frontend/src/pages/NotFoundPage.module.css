@@ -1,0 +1,177 @@
+/* ═══════════════════════════════════════════════════════════
+   DROPT — 404 NOT FOUND PAGE
+   Matches HomePage theme:
+   Palette : #f7f7f7 (bg) · #0a0a0a (text) · #e8e8e8 (border)
+   Fonts   : DM Serif Display (headings) · DM Sans (body)
+═══════════════════════════════════════════════════════════ */
+
+
+/* ── page ─────────────────────────────────────────────────── */
+.page {
+  min-height: calc(100vh - var(--nav-height, 64px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: var(--bg-warm);
+  font-family: var(--font-body);
+}
+
+/* ── inner ────────────────────────────────────────────────── */
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  max-width: 480px;
+  width: 100%;
+}
+
+/* ── pill label (matches heroPill / slideLabel style) ─────── */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--gold-grad);
+  color: var(--on-gold);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+.pillDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--surface);
+  opacity: 0.7;
+}
+
+/* ── 404 big number ───────────────────────────────────────── */
+.code {
+  font-family: var(--font-display);
+  font-size: clamp(100px, 18vw, 160px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -4px;
+  /* outlined style — matches your existing stroke look but in brand colors */
+  color: transparent;
+  -webkit-text-stroke: 2.5px var(--accent);
+  user-select: none;
+}
+
+/* ── heading ──────────────────────────────────────────────── */
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ── sub text ─────────────────────────────────────────────── */
+.sub {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink-3);
+  max-width: 360px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── action buttons ───────────────────────────────────────── */
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* primary — solid black, matches .submitBtn / .heroBtnPrimary */
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold-grad);
+  color: var(--on-gold);
+  border: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: background 0.16s, transform 0.14s;
+  text-decoration: none;
+}
+.btnPrimary:hover {
+  background: var(--gold-grad);
+  transform: translateY(-1px);
+}
+
+/* outline — matches .googleBtn / .heroBtnSecondary */
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  border:1.5px solid var(--border);
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, transform 0.14s;
+}
+.btnOutline:hover {
+  border-color:var(--border-2);
+  background: var(--bg-warm);
+  transform: translateY(-1px);
+}
+
+/* ── quick nav links ──────────────────────────────────────── */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quickLink {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.14s;
+}
+.quickLink:hover { color: var(--ink); }
+
+.dot {
+  color: var(--muted);
+  font-size: 14px;
+  user-select: none;
+}
+
+/* ── responsive ───────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .code { letter-spacing: -2px; }
+  .actions { flex-direction: column; align-items: stretch; }
+  .btnPrimary,
+  .btnOutline { justify-content: center; }
+}

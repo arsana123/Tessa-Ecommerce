@@ -1,0 +1,269 @@
+/* ── FOOTER — Dropt ──────────────────────────────────────────────────────── */
+
+.footer {
+  background: var(--bg-deep);
+  color: rgba(244,232,208,0.78);
+  font-family: var(--font-body);
+}
+
+/* ── Trust strip ─────────────────────────────────────────────────────────── */
+.trustStrip {
+  background: var(--bg-warm);
+  border-bottom:1px solid var(--accent);
+  padding: 16px 0;
+}
+
+.stripContainer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.stripItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stripEmoji { font-size: 15px; }
+
+.stripLabel {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(244,232,208,0.8);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+/* ── Body ────────────────────────────────────────────────────────────────── */
+.body { padding: 60px 0 48px; }
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1.4fr;
+  gap: 48px;
+}
+
+/* ── Brand col ───────────────────────────────────────────────────────────── */
+.brandCol { display: flex; flex-direction: column; gap: 18px; }
+
+.logoLink {
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.18s;
+}
+.logoLink:hover { opacity: 1; }
+
+.logoSvg { width: 108px; height: 30px; display: block; }
+
+.brandDesc {
+  font-size: 13px;
+  line-height: 1.75;
+  color: rgba(244,232,208,0.64);
+  max-width: 220px;
+}
+
+/* ── Contact list ────────────────────────────────────────────────────────── */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12.5px;
+  color: rgba(244,232,208,0.64);
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color 0.16s;
+}
+.contactItem:hover { color: rgba(244,232,208,0.8); }
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  color: rgba(244,232,208,0.64);
+  transition: color 0.16s;
+}
+.contactItem:hover .contactIcon { color: rgba(244,232,208,0.8); }
+
+/* ── Social row ──────────────────────────────────────────────────────────── */
+.socialRow { display: flex; gap: 8px; }
+
+.socialBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(244,232,208,0.64);
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+}
+.socialBtn:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(244,232,208,0.64);
+  color: var(--ink);
+}
+
+/* ── Link columns ────────────────────────────────────────────────────────── */
+.linkCol { display: flex; flex-direction: column; gap: 14px; }
+
+.colHeading {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: rgba(244,232,208,0.95);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 2px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footLink {
+  font-size: 13px;
+  color: rgba(244,232,208,0.64);
+  text-decoration: none;
+  transition: color 0.16s;
+}
+.footLink:hover { color: rgba(244,232,208,0.95); }
+
+/* ── Newsletter ──────────────────────────────────────────────────────────── */
+.nlDesc {
+  font-size: 12px;
+  color: rgba(244,232,208,0.64);
+  line-height: 1.65;
+  margin-top: -6px;
+}
+
+.nlBox {
+  display: flex;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  transition: border-color 0.2s;
+}
+.nlBox:focus-within { border-color: rgba(244,232,208,0.64); }
+
+.nlInput {
+  flex: 1;
+  padding: 10px 13px;
+  background: transparent;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink);
+  min-width: 0;
+}
+.nlInput::placeholder { color: rgba(244,232,208,0.64); }
+.nlInput:focus { outline: none; }
+
+.nlBtn {
+  background: var(--surface);
+  border: none;
+  color: var(--ink);
+  padding: 10px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 700;
+  transition: background 0.18s;
+  flex-shrink: 0;
+}
+.nlBtn:hover { background: var(--bg-warm); }
+
+/* ── Bottom bar ──────────────────────────────────────────────────────────── */
+.bottomBar {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding: 16px 0;
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: rgba(244,232,208,0.64);
+}
+
+.paymentRow { display: flex; gap: 6px; align-items: center; }
+
+.payBadge {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(244,232,208,0.64);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 3px 8px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .grid { grid-template-columns: 1fr 1fr 1fr; }
+  .brandCol {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: flex-start;
+  }
+  .brandDesc { max-width: 260px; }
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .brandCol { grid-column: 1 / -1; flex-direction: column; }
+  .stripContainer { gap: 20px; justify-content: flex-start; }
+  .body { padding: 40px 0 32px; }
+  .container { padding: 0 18px; }
+  .stripContainer { padding: 0 18px; }
+}
+
+@media (max-width: 420px) { .grid { grid-template-columns: 1fr; } }
+
+/* ── Tessa logo lockup ───────────────────────────────────────────────────── */
+.logoLockup { display: inline-flex; align-items: center; gap: 12px; }
+.logoImg { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px var(--accent); }
+.logoWord { font-family: var(--font-display); font-size: 34px; font-weight: 500; letter-spacing: 0.16em; color: var(--accent-dark); line-height: 1; }
+.footer { border-top: 1px solid var(--border-2); }
+
+.nlBtn { background: var(--gold-grad); color: var(--on-gold); }
+.nlBtn:hover { background: var(--gold-grad); filter: brightness(1.08); }
+.colHeading { color: var(--accent-dark); font-family: var(--font-display); font-size: 20px; letter-spacing: 0.04em; text-transform: none; }

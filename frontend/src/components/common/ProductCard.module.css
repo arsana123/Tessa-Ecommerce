@@ -1,0 +1,235 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-2);
+}
+
+/* ── Image ───────────────────────────────────────────────────────────────── */
+.imageWrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: var(--bg-warm);
+  overflow: hidden;
+  border-radius: 999px 999px 0 0;
+  margin: 10px 10px 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover .image { transform: scale(1.05); }
+
+/* ── Hover overlay ───────────────────────────────────────────────────────── */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 4, 7, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+.card:hover .overlay { opacity: 1; }
+
+.viewBtn {
+  background: var(--gold-grad);      /* was: var(--surface) */
+  color: var(--on-gold);
+  padding: 8px 20px;
+  border-radius: var(--radius-xs);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transform: translateY(6px);
+  transition: var(--transition);
+}
+.card:hover .viewBtn { transform: translateY(0); }
+
+/* ── Badges — monochrome only ────────────────────────────────────────────── */
+.discountBadge {
+  position: absolute;
+  top: 54px;
+  left: 14px;
+  background: var(--gold-grad);
+  color: var(--on-gold);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  letter-spacing: 0.04em;
+  z-index: 1;
+}
+
+.flashBadge {
+  position: absolute;
+  top: 54px;
+  right: 14px;
+  background: var(--gold-grad);
+  color: var(--on-gold);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 54px;
+  right: 14px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-2);
+  background:rgba(34,6,10,0.88);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* ── Body ────────────────────────────────────────────────────────────────── */
+.body {
+  padding: 14px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.brand {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 3px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.3px;
+}
+
+.flashPrice {
+  color: var(--ink);
+}
+
+.mrp {
+  font-size: 12px;
+  color: var(--muted-lt);
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+/* ── Flash footer ────────────────────────────────────────────────────────── */
+.flashFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-3);
+  background: var(--bg-warm);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stockAlert {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.soldOut {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.upcoming {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 5px;
+  letter-spacing: 0.02em;
+}
+
+/* ── Stock bar — neutral ─────────────────────────────────────────────────── */
+.stockBar {
+  height: 2px;
+  background: var(--border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.stockBarFill {
+  height: 100%;
+  background: var(--gold-grad);
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+.name { font-family: var(--font-display); font-size: 20px; font-weight: 500; line-height: 1.2; }
+.brand { letter-spacing: 0.1em; }
